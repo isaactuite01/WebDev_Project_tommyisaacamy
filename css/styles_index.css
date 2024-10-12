@@ -1,10 +1,10 @@
-
 h1 {
     color: rgb(137, 207, 231);
     font-family: "Poppins";
     font-weight: 900;
     display: flex;
     min-width: 300px;
+    margin-left: 10px;
 }
 
 header {
@@ -18,14 +18,12 @@ header {
     margin: 0;
     position: fixed;
     border-bottom: 5px white solid;
-
 }
 
 nav {
     color: aqua;
     display: inline-flex;
 }
-
 
 nav a {
     color: rgb(137, 207, 231);
@@ -39,10 +37,7 @@ nav a {
 
 nav a:hover{
     background-color: rgba(137, 208, 231, 0.587);
-
 }
-
-
 
 img {
     height: 70vw;
@@ -61,9 +56,6 @@ img {
     min-width: 800px;
     background-size: 100% auto;
     max-height: 700px;
-
-
-
 }
 
 body {
