@@ -1,6 +1,13 @@
 
-h1, p {
-    margin: 0 auto;
-    color: blue;
+h1 {
+    margin: 0px auto;
+    color: rgb(137, 207, 231);
+    width: 400px;
+    padding: 20px;
+    height: 100px;
+    size: 200px;
+    font-family: "luminari";
+    font-weight: 900;
+
 
 }
