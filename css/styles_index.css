@@ -85,3 +85,14 @@ footer{
     text-decoration: underline;
     color: rgb(255, 255, 255);
 }
+
+#biography{
+    background-color: #6482ad;
+    color: #f5eded;
+    font-family: "Poppins";
+    padding: 20px;
+    margin: 20px;
+
+
+}
+
