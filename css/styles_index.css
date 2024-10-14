@@ -32,12 +32,19 @@ nav a {
     text-decoration: none;
     padding: 10px;
     font-family: "Poppins";
-    border-radius: 10px;
+    border-radius: 30px;
 }
+
 
 nav a:hover{
     background-color: rgba(137, 208, 231, 0.587);
 }
+
+nav a:active{
+    background-color: white;
+
+}
+
 
 img {
     height: 70vw;
@@ -76,12 +83,19 @@ body {
 
 #reviews {
     padding: 20px;
-    color: #f5eded
+    color: #f5eded;
+    background-color: #e7eaee42;
+    border-radius: 30px;
+    margin: 20px 20px 10px 20px;
 }
 
 footer{
-    text-align: center;
-    margin: 10px 10px 30px 10px;
+    display: flex;
+    margin: 20px 0px 0px 0px;
     text-decoration: underline;
     color: rgb(255, 255, 255);
+    background-color: #6482ad;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
