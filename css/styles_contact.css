@@ -1,13 +1,89 @@
-h1{font-size:64;color:#ffffff}
-#form{
-    font: size 20px; ;
-    font-family:Arial, Helvetica, sans-serif ;
-    
+h1 {
+    color: #7594f1;
+    font-family: "Poppins";
+    font-weight: 900;
+    display:inline-block;
 }
-#emailadd{
-    font: size 83px;
-    font-weight: 400;
+
+header{
+    display: inline-block;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: baseline;
+    height: 100px;
+    
+    margin: 100;
+    position:fixed;
+    border-bottom: 5px rgb(47, 86, 240);
+}
+
+nav{
+    color: #bfd0f1;
+    display: inline-block;
+    width: 1135px;
+}
+
+nav a {
+    color: #bfd0f1;
+    font-size: 25px;
+    margin: 5px;
+    padding: 10px;
+}
+
+img{
+    height: 50vw;
+    width: 90%;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: aliceblue dotted 8px;
+}
+
+body{
+    margin: 0;
+    background-color:#bfd0f1;
+    font-family: "Poppins";
+}
+
+#details{
+    text-align: center;
+    color: black;
+    font-family: "Poppins";
 
 }
-#bg_image{
-    background-image: url("https://media.istockphoto.com/id/138172743/photo/panorama-of-snow-mountain-landscape-alps.jpg?s=2048x2048&w=is&k=20&c=NOHNs5GlfqzYD4j9_W2sBD1UaJ7WLyPtZ5rq14sGYJI=");}
+
+#border{
+    padding-top: 50px;
+    border: aliceblue dotted 8px;
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 80px;
+    padding: 15px;
+    border-radius: 1px;
+    opacity: 1;
+    margin-left: 700px;
+}
+
+#box{
+    border:aliceblue dotted 8px;
+    position: absolute;
+    z-index: 1;
+    border-width: auto;
+    margin-left: 50px;
+
+}
+
+#button:hover {
+    transition-duration: 0.4s; 
+    background-color: #0054fd;
+    width: 80px;
+    border-radius: 50%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
