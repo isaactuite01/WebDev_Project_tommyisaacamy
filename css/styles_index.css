@@ -37,19 +37,12 @@ nav a {
     text-decoration: none;
     padding: 10px;
     font-family: "Poppins";
-    border-radius: 30px;
+    border-radius: 10px;
 }
-
 
 nav a:hover{
     background-color: rgba(137, 208, 231, 0.587);
 }
-
-nav a:active{
-    background-color: white;
-
-}
-
 
 img {
     height: 70vw;
@@ -57,15 +50,17 @@ img {
     display: flex;
     margin: 20px auto;
     display: block;
+    border-left: 5px white dotted;
+    border-right: 5px white dotted;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 70px;
-    border: white dotted 5px;
+    border-bottom: 5px white dotted;
     flex-grow: 2;
     min-width: 800px;
     background-size: 100% auto;
-    max-height: 800px;
+    max-height: 700px;
 }
 
 body {
@@ -86,21 +81,14 @@ body {
 
 #reviews {
     padding: 20px;
-    color: #f5eded;
-    background-color: #e7eaee42;
-    border-radius: 30px;
-    margin: 20px 20px 10px 20px;
+    color: #f5eded
 }
 
 footer{
-    display: flex;
-    margin: 20px 0px 0px 0px;
+    text-align: center;
+    margin: 10px 10px 30px 10px;
     text-decoration: underline;
     color: rgb(255, 255, 255);
-    background-color: #6482ad;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
 }
 
 #biography{
