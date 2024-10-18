@@ -8,7 +8,7 @@ h1 {
 }
 h2{
     color: white;
-    margin-left: 100px;
+
 }
 
 header {
@@ -144,4 +144,9 @@ footer{
     border: 2px solid white;
     position: static;
     padding-top: 100px;
+}
+
+
+.about_heading {
+    margin-left: 100px;
 }
