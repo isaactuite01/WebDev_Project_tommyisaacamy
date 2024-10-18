@@ -6,7 +6,7 @@ h1 {
 }
 
 header{
-    display: inline-block;
+    display: flex;
     background-color: aliceblue;
     align-items: center;
     justify-content: baseline;
@@ -14,7 +14,7 @@ header{
     
     margin: 100;
     position:fixed;
-    border-bottom: 5px rgb(47, 86, 240);
+    border-bottom: 5px rgb(47, 86, 240) solid;
 }
 
 nav{
@@ -28,6 +28,7 @@ nav a {
     font-size: 25px;
     margin: 5px;
     padding: 10px;
+    display: 
 }
 
 img{
