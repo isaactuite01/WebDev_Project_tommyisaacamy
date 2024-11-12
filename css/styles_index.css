@@ -6,9 +6,6 @@ h1 {
     min-width: 300px;
     margin-left: 10px;
 }
-h2{
-    color: white;
-}
 
 .index_heading {
     color: black;
@@ -33,7 +30,7 @@ nav {
     z-index: 10;
 }
 
-nav a {
+nav a, #DEST {
     color: rgb(255, 255, 255);
     margin: 0px;
     font-size: 25px;
@@ -45,9 +42,15 @@ nav a {
 
 nav a:hover{
     background-color: rgba(137, 208, 231, 0.587);
+    
 }
 
-img {
+#DEST:hover{
+    background-color: rgba(216, 216, 216, 0.587);
+    
+}
+
+#Mountain {
     height: 70vw;
     width: 90%;
     display: flex;
@@ -162,4 +165,45 @@ footer p {
 
 .about_heading {
     margin-left: 100px;
+}
+
+#DEST {
+    color: black;
+    text-decoration: none;
+    
+}
+
+#title_card {
+    display: flex;
+    margin: 0px auto;
+    margin-top: 100px;
+    background-color: white;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#title_dest {
+    color: black;
+    font-size: 50px;
+}
+
+.destination {
+    display: flex;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: white;
+    height: 200px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.dest_img {
+    height: 50px;
+    width: 50px;
+    size: 100px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
 }
