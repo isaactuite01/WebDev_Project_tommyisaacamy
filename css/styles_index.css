@@ -110,8 +110,8 @@ footer p {
 }
 
 #biography{
-    background-color: #6482ad;
-    color: #f5eded;
+    background-color: #ffffff;
+    color: #000000;
     font-family: "Poppins";
     padding: 20px;
     margin: 20px;
@@ -233,4 +233,9 @@ footer p {
     text-wrap: wrap;
     flex-wrap: wrap;
     white-space: freeline;
+ }
+
+ #whatever{
+    color: black;
+    background-color: white;
  }
