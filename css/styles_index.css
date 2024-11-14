@@ -190,9 +190,20 @@ footer p {
 
 
 
-
-
-
+.desination:hover {
+    display: flex;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: white;
+    height: 250px;
+    width: 80%;
+    min-width: 600px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    content-visibility: hidden;
+}
 .destination {
     display: flex;
     margin: 0px auto;
@@ -205,7 +216,6 @@ footer p {
     justify-content: center;
     border-radius: 30px;
     margin-bottom: 50px;
-
 }
 
 .dest_img {
@@ -229,7 +239,6 @@ footer p {
     height: 100%;
     white-space: normal;
     overflow: hidden;
-
 }
  .dest_description {
     width: 50%;
