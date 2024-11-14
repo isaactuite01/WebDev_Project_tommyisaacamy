@@ -190,23 +190,30 @@ footer p {
 
 
 
+
+
+
 .destination {
     display: flex;
     margin: 0px auto;
     margin-top: 20px;
     background-color: white;
-    height: 200px;
+    height: 250px;
     width: 80%;
+    min-width: 600px;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+
 }
 
 .dest_img {
     height: 70%;
     width: 90%;
+    max-width: 300px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .dest_title {
@@ -220,20 +227,33 @@ footer p {
     text-align: center;
     width: 50%;
     height: 100%;
+    white-space: normal;
+    overflow: hidden;
 
 }
  .dest_description {
     width: 50%;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    background-color: green;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
  }
 
  .p {
-    text-wrap: wrap;
-    flex-wrap: wrap;
-    white-space: freeline;
+    word-wrap: break-word;
+    width: 80%;
+    padding: 2px;
+    font-size: .9em;
  }
+
+
+
+
+
+
+
 
  #whatever{
     color: black;
