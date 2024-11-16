@@ -260,15 +260,3 @@ footer p {
     color: black;
     background-color: white;
  }
-
-
-
-@media (max-width: 600px) 
-{
-    body{
-        font-size: smaller;
-        background-color: white;
-    }
-    img {
-    }
-}
