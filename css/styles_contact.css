@@ -1,89 +1,185 @@
-h1 {
-    color: #7594f1;
-    font-family: "Poppins";
-    font-weight: 900;
-    display:inline-block;
+/* General Styles */
+html {
+    font-size: 100%; /* Scalable font sizing */
+    scroll-behavior: smooth; /* Improve navigation experience */
 }
 
-header{
+body {
+    margin: 0;
+    background-color: #C1D8FA;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
     display: flex;
-    background-color: aliceblue;
     align-items: center;
-    justify-content: baseline;
-    height: 100px;
-    
-    margin: 100;
-    position:fixed;
-    border-bottom: 5px rgb(47, 86, 240) solid;
+    justify-content: space-between;
+    background-color: #3977C1;
+    padding: 20px;
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav{
-    color: #bfd0f1;
-    display: inline-block;
-    width: 1135px;
+h1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-    color: #bfd0f1;
-    font-size: 25px;
-    margin: 5px;
-    padding: 10px;
-}
-
-img{
-    height: 50vw;
-    width: 90%;
-    display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border: aliceblue dotted 8px;
-}
-
-body{
-    margin: 0;
-    background-color:#bfd0f1;
-    font-family: "Poppins";
-}
-
-#details{
-    text-align: center;
-    color: black;
-    font-family: "Poppins";
-
-}
-
-#border{
-    padding-top: 50px;
-    border: aliceblue dotted 8px;
-    position: absolute;
-    z-index: 1;
-    width: 400px;
-    height: 80px;
-    padding: 15px;
-    border-radius: 1px;
-    opacity: 1;
-    margin-left: 700px;
-}
-
-#box{
-    border:aliceblue dotted 8px;
-    position: absolute;
-    z-index: 1;
-    border-width: auto;
-    margin-left: 50px;
-
-}
-
-#button:hover {
-    transition-duration: 0.4s; 
-    background-color: #0054fd;
-    width: 80px;
-    border-radius: 50%;
-    padding: 15px 32px;
-    text-align: center;
+    color: #ffffff;
+    font-size: 1.25rem;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
+nav a:hover,
+nav a:focus {
+    background-color: #ffffff;
+    color: #3977C1;
+    outline: none;
+}
+
+/* Main Image */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 8px dotted aliceblue;
+    border-radius: 20px;
+}
+
+/* Form Section */
+#box {
+    border: 8px dotted aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #3977C1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #ffffff;
+    color: #3977C1;
+    outline: none;
+}
+
+/* Contact Information Section */
+#contact-info {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 8px dotted aliceblue;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+a {
+    color: #3977C1;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Button Hover Styles */
+#button:hover {
+    transition-duration: 0.4s;
+    background-color: #3977C1;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Focus Outline for Accessibility */
+button:focus,
+a:focus {
+    outline: 3px dashed #0018f0;
+    outline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    #box,
+    #contact-info {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+   
