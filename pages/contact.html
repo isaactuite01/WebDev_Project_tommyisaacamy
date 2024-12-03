@@ -24,29 +24,30 @@
             <img src="https://img.freepik.com/premium-photo/snowboarder-wearing-helmet-is-riding-down-snowy-hill_1315312-97761.jpg?w=900" 
             alt="A snowboarder wearing a helmet riding down a snowy hill">
         
-            <form>
-                <fieldset>
+            <form id="customForm">
                     <legend>Contact Form</legend>
                     <label for="user_name">Name:</label>
                     <input type="text" id="user_name" name="user_name" required>
+
                     <br><br>
                 
                     <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="text" id="email" name="email" required>
                     <br><br>
                 
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
                        placeholder="123-456-7890">
+
                     <br><br>
 
                     <label for="message">Message:</label>
                     <input type="textarea" id="message" name="message" required>
                     <br><br>
+                    <p id="error" style="color:red" class="error-message"> </p>
+                    <p id="success-message"></p>
                 
-                    <button onclick="submit_data();">Submit</button>
-
-                </fieldset>
+                    <button type='submit'>Submit</button>
             </form>
         
             <section id="contact-info">
@@ -58,15 +59,38 @@
         </main>
         <script>
 
-            function submit_data(){
+        function validateInput(event) {
+            // Prevent form submission for validation
+            event.preventDefault();
 
-                user_name = document.querySelector('#user_name').value;
-                message = document.querySelector('#message').value;
-                email = document.querySelector('#email').value;
-                fname = document.querySelector('#phone').value;
+            // Clear any previous error messages
+            const errorElement = document.getElementById("error");
+            errorElement.textContent = "";
 
-                console.log(user_name, message, email, fname);
+            // Get the input value
+            const inputField = document.getElementById("user_name");
+            const inputValue = inputField.value.trim();
+
+            // Validate input
+            if (inputValue === "") {
+                errorElement.textContent = "The username cannot be empty. Please enter a valid username.";
+                return;
             }
+
+            if (inputValue.length < 3) {
+                errorElement.textContent = "The username must be at least 3 characters long.";
+                return;
+            }
+
+            // If input is valid, submit the form or show success message
+            const successElement = document.getElementById("success-message");
+            successElement.textContent = "Form submitted successfully!";
+            successElement.style.color = "green";
+        }
+
+        const form = document.getElementById("customForm");
+        form.addEventListener("submit", validateInput);
+            
 
         </script>
 

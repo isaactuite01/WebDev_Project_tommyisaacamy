@@ -3,8 +3,9 @@ h1 {
     font-family: "Poppins";
     font-weight: 900;
     display: flex;
-    min-width: 200px;
+    min-width: 250px;
     margin-left: 10px;
+    font-size: 25px;
 }
 
 .index_heading {
@@ -33,7 +34,7 @@ nav {
 nav a, #DEST {
     color: rgb(255, 255, 255);
     margin: 0px;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px;
     font-family: "Poppins";
@@ -254,7 +255,7 @@ footer p {
 
  @media (max-width: 1024px) and (min-width: 600px) {
     body {
-      font-size: 18px;
+      font-size: 15px;
       /* Tablet Screens */
     }
   }
@@ -270,7 +271,7 @@ footer p {
     }
 
     nav a {
-        font-size: 15px;
+        font-size: 12px;
     }
     img {
         max-width: 90%;
