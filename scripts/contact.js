@@ -55,6 +55,12 @@ function validateInput(event) {
         return;
     }
 
+    if (message_val.length < 10){
+        errorElement.textContent = "Please enter a longer message (10 characters or more)";
+        event.preventDefault();
+        return;
+    }
+
     // If input is valid, submit the form or show success message
     const successElement = document.getElementById("success-message");
     successElement.textContent = "Form submitted successfully!";
